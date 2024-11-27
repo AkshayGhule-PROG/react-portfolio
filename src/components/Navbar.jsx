@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.jpg";
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
@@ -7,8 +6,9 @@ const Navbar = () => {
     <nav className="flex items-center justify-between py-6 mb-20">
       {/* Logo Section */}
       <div className="flex items-center">
+        {/* Update logo path */}
         <img 
-          src={logo} 
+          src="/logo.jpg"  // Reference logo from the public folder
           alt="Website Logo" 
           className="mx-2 h-12 w-auto object-contain" 
         />
