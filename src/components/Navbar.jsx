@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
@@ -9,8 +10,18 @@ const Navbar = () => {
         <img 
           src={logo} 
           alt="Website Logo" 
-          className="mx-2 h-12 w-auto object-contain" // Keeps proper logo size
+          className="mx-2 h-12 w-auto object-contain" 
         />
+      </div>
+
+      {/* Links Section */}
+      <div className="flex items-center gap-6">
+        <Link to="/" className="hover:text-blue-400">Home</Link>
+        <Link to="/about" className="hover:text-blue-400">About</Link>
+        <Link to="/technologies" className="hover:text-blue-400">Technologies</Link>
+        <Link to="/experience" className="hover:text-blue-400">Experience</Link>
+        <Link to="/projects" className="hover:text-blue-400">Projects</Link>
+        <Link to="/contact" className="hover:text-blue-400">Contact</Link>
       </div>
 
       {/* Social Media Icons */}
